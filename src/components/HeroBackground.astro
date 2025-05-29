@@ -1,0 +1,37 @@
+---
+---
+
+<div class="absolute inset-0 -z-10 overflow-hidden">
+  <!-- Gradient Background -->
+  <div class="absolute inset-0 bg-gradient-to-br from-pink-500 via-purple-500 to-blue-500 opacity-70"></div>
+  
+  <!-- Flowing curves -->
+  <div class="absolute w-full h-full">
+    <!-- Blue curve -->
+    <div class="absolute top-[10%] left-[5%] w-[50%] h-[60%] bg-blue-400/70 rounded-full blur-[80px] transform rotate-[-45deg] flowing-curve"></div>
+    
+    <!-- Pink curve -->
+    <div class="absolute top-[20%] right-[15%] w-[40%] h-[50%] bg-pink-400/70 rounded-full blur-[80px] transform rotate-[30deg] flowing-curve"></div>
+    
+    <!-- Purple curve -->
+    <div class="absolute bottom-[10%] left-[25%] w-[45%] h-[40%] bg-purple-400/70 rounded-full blur-[80px] transform rotate-[15deg] flowing-curve"></div>
+    
+    <!-- Orange accent -->
+    <div class="absolute top-[40%] right-[10%] w-[30%] h-[30%] bg-orange-400/70 rounded-full blur-[80px] transform rotate-[-15deg] flowing-curve"></div>
+  </div>
+
+  <!-- Mesh overlay -->
+  <div class="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(255,255,255,0.1)_1px,transparent_1px)] bg-[length:24px_24px]"></div>
+</div>
+
+<style>
+  @keyframes float {
+    0% { transform: translate(0, 0) rotate(0deg); }
+    50% { transform: translate(10px, -10px) rotate(5deg); }
+    100% { transform: translate(0, 0) rotate(0deg); }
+  }
+
+  .flowing-curve {
+    animation: float 15s ease-in-out infinite;
+  }
+</style>

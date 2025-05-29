@@ -1,0 +1,533 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import HeroCards from "../../components/HeroCards.astro";
+import Navigation from '../../components/Navigation.astro';
+import HeroBackground from '../../components/HeroBackground.astro';
+---
+
+<Layout title="Fido Plus - Solutions Digitales sur Mesure" lang="fr">
+  <div class="min-h-screen bg-background text-foreground">
+    <Navigation />
+    
+    <main class="overflow-x-hidden">
+      <!-- Hero Section -->
+      <section class="relative w-full py-24 md:py-32 overflow-hidden bg-gradient-to-br from-green-500/30 via-blue-600/30 to-yellow-400/30">
+        <!-- Gradient Overlay -->
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_50%_120%,#4ade80_0%,#2563eb_100%)] opacity-20 mix-blend-overlay"></div>
+        
+        <!-- Floating Shapes -->
+        <div class="absolute inset-0 overflow-hidden">
+          <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-gradient-to-r from-green-400 to-blue-500 rounded-full filter blur-3xl opacity-20 animate-pulse"></div>
+          <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-gradient-to-r from-blue-500 to-yellow-400 rounded-full filter blur-3xl opacity-20 animate-pulse delay-1000"></div>
+        </div>
+
+        <div class="relative z-10 container grid lg:grid-cols-2 gap-8 items-center">
+          <div class="space-y-8">
+            <div class="space-y-6">
+              <h1 class="heading-xl animate-in text-black">
+                <img src="/images/Fido_Plus_logo.png" alt="Logo Fido Plus" class="h-[1.5em] -mt-2 -mr-4 inline-block align-baseline"> La Solution digitale sur mesure pour votre entreprise
+              </h1>
+              <p class="text-xl text-black/80 animate-in [--animate-delay:200ms]">
+                De la conception à la réalisation, nous créons des solutions digitales innovantes qui transforment votre vision en réalité.
+              </p>
+              <div class="flex items-center gap-4 animate-in [--animate-delay:400ms]">
+                <a href="#contact" class="bg-white border-2 border-black text-black px-6 py-2 rounded-lg hover:bg-black hover:text-white transition-colors">
+                  Commencer un projet
+                </a>
+                <a href="#services" class="bg-white border-2 border-black text-black px-6 py-2 rounded-lg hover:bg-black hover:text-white transition-colors">
+                  Découvrir nos services
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Cards -->
+          <div class="hidden lg:block">
+            <HeroCards />
+          </div>
+        </div>
+
+        <HeroBackground />
+      </section>
+
+      <!-- Services Section -->
+      <section id="services" class="container py-4 md:py-6">
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+          <!-- Left Column: Text -->
+          <div class="space-y-8">
+            <h2 class="text-4xl md:text-5xl font-bold">
+              Nous intervenons sur plusieurs domaines du digital
+            </h2>
+            <p class="text-xl text-black/80">
+              Notre expertise couvre un large spectre de services numériques, vous permettant de bénéficier d'une solution complète et intégrée pour votre transformation digitale.
+            </p>
+          </div>
+
+          <!-- Right Column: Tags Box -->
+          <div class="relative">
+            <div class="aspect-square w-full max-w-lg mx-auto rounded-3xl p-8 border-2 border-black bg-white relative">
+              <!-- Background with same gradient as hero -->
+              <div class="absolute inset-2 rounded-2xl bg-gradient-to-br from-green-400 via-blue-500 to-yellow-300 opacity-40"></div>
+              
+              <!-- Title -->
+              <div class="relative z-10 text-center mb-6">
+                <h3 class="text-2xl font-bold text-black">Domaines d'Expertise</h3>
+              </div>
+
+              <!-- Tags Container -->
+              <div class="relative z-10 w-full h-full flex flex-wrap gap-4 items-start justify-center content-start overflow-y-auto max-h-[calc(100%-4rem)]">
+                <span class="bg-white/90 px-6 py-3 rounded-full border-2 border-black font-semibold hover:bg-black hover:text-white transition-colors cursor-default">Site Web</span>
+                <span class="bg-white/90 px-6 py-3 rounded-full border-2 border-black font-semibold hover:bg-black hover:text-white transition-colors cursor-default">Graphic Design</span>
+                <span class="bg-white/90 px-6 py-3 rounded-full border-2 border-black font-semibold hover:bg-black hover:text-white transition-colors cursor-default">Application Mobile</span>
+                <span class="bg-white/90 px-6 py-3 rounded-full border-2 border-black font-semibold hover:bg-black hover:text-white transition-colors cursor-default">UI/UX Design</span>
+                <span class="bg-white/90 px-6 py-3 rounded-full border-2 border-black font-semibold hover:bg-black hover:text-white transition-colors cursor-default">Automatisation</span>
+                <span class="bg-white/90 px-6 py-3 rounded-full border-2 border-black font-semibold hover:bg-black hover:text-white transition-colors cursor-default">Packaging</span>
+                <span class="bg-white/90 px-6 py-3 rounded-full border-2 border-black font-semibold hover:bg-black hover:text-white transition-colors cursor-default">Présentation</span>
+                <span class="bg-white/90 px-6 py-3 rounded-full border-2 border-black font-semibold hover:bg-black hover:text-white transition-colors cursor-default">Marketing Digital</span>
+                <span class="bg-white/90 px-6 py-3 rounded-full border-2 border-black font-semibold hover:bg-black hover:text-white transition-colors cursor-default">Branding</span>
+              </div>
+
+              <!-- Floating shapes -->
+              <div class="absolute inset-0 overflow-hidden pointer-events-none">
+                <div class="absolute top-1/4 left-1/4 w-32 h-32 bg-gradient-to-r from-green-300 to-blue-400 rounded-full filter blur-3xl opacity-40 animate-pulse"></div>
+                <div class="absolute bottom-1/4 right-1/4 w-32 h-32 bg-gradient-to-r from-blue-400 to-yellow-300 rounded-full filter blur-3xl opacity-40 animate-pulse delay-1000"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Strip Section -->
+      <section class="relative py-2 overflow-hidden bg-white z-50">
+        <!-- Bande défilante de projets -->
+        <div class="projects-strip-container relative z-[60]">
+          <div class="projects-strip animate-slide">
+          <!-- Première série de cartes -->
+          <div class="project-card">
+            <img src="/images/Project_card/Project_card.png" alt="Application Mobile" class="w-full h-full object-cover" />
+          </div>
+          <div class="project-card">
+            <img src="/images/Project_card/Project_card_1.png" alt="Dashboard Analytics" class="w-full h-full object-cover" />
+          </div>
+          <div class="project-card">
+            <img src="/images/Project_card/Project_card_2.png" alt="Site E-commerce" class="w-full h-full object-cover" />
+          </div>
+          <div class="project-card">
+            <img src="/images/Project_card/Project_card_3.png" alt="Application Web" class="w-full h-full object-cover" />
+          </div>
+          
+          <!-- Duplication des cartes pour un défilement infini -->
+          <div class="project-card">
+            <img src="/images/Project_card/Project_card.png" alt="Application Mobile" class="w-full h-full object-cover" />
+          </div>
+          <div class="project-card">
+            <img src="/images/Project_card/Project_card_1.png" alt="Dashboard Analytics" class="w-full h-full object-cover" />
+          </div>
+          <div class="project-card">
+            <img src="/images/Project_card/Project_card_2.png" alt="Site E-commerce" class="w-full h-full object-cover" />
+          </div>
+          <div class="project-card">
+            <img src="/images/Project_card/Project_card_3.png" alt="Application Web" class="w-full h-full object-cover" />
+          </div>
+        </div>
+      </section>
+          
+
+      <!-- CTA Section -->
+      <section class="py-24">
+        <div class="container">
+          <div class="relative overflow-hidden rounded-3xl">
+            <div class="absolute inset-0 bg-gradient-to-br from-pink-500 via-blue-600 to-purple-600 opacity-90"></div>
+            <div class="absolute inset-0 bg-gradient-to-r from-pink-400 via-blue-500 to-purple-500 opacity-50 animate-pulse"></div>
+            <div class="relative px-8 py-16 text-center sm:px-16 md:py-24 lg:py-32">
+              <h2 class="heading-lg text-white mb-4 animate-in font-bold text-4xl md:text-5xl">
+                Prêt à transformer votre présence digitale ?
+              </h2>
+              <p class="text-lg text-white/90 mb-8 max-w-2xl mx-auto animate-in [--animate-delay:200ms]">
+                Contactez-nous dès aujourd'hui pour discuter de votre projet et découvrir comment nous pouvons vous aider à atteindre vos objectifs.
+              </p>
+              <a href="#contact" class="inline-flex items-center justify-center rounded-full bg-white px-8 py-3 text-sm font-medium text-black shadow-lg transition-all hover:bg-black hover:text-white hover:scale-105 animate-in [--animate-delay:400ms]">
+                Commencer maintenant
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+     <!-- FAQ Section -->
+    <section id="faq" class="py-20 bg-white">
+      <div class="container mx-auto px-4">
+        <h2 class="text-4xl md:text-5xl font-bold text-center mb-12 text-gray-900">
+          Questions Fréquentes
+        </h2>
+        <div class="max-w-3xl mx-auto">
+          <div class="space-y-4">
+            <!-- Question 1 -->
+            <div class="bg-white rounded-lg shadow-sm overflow-hidden border border-gray-100">
+              <button class="faq-toggle w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50">
+                <h3 class="text-lg font-semibold text-gray-900">Comment démarrer un projet avec FIDO PLUS ?</h3>
+                <svg class="w-5 h-5 text-gray-500 transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+              </button>
+              <div class="faq-content hidden px-6 py-4 bg-gray-50 border-t border-gray-100">
+                <p class="text-gray-600">Vous pouvez prendre rendez-vous directement via notre formulaire en ligne ou nous contacter par email. Notre équipe vous répondra dans les 24h.</p>
+              </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="bg-white rounded-lg shadow-sm overflow-hidden border border-gray-100">
+              <button class="faq-toggle w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50">
+                <h3 class="text-lg font-semibold text-gray-900">Quel est le délai moyen de réalisation ?</h3>
+                <svg class="w-5 h-5 text-gray-500 transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+              </button>
+              <div class="faq-content hidden px-6 py-4 bg-gray-50 border-t border-gray-100">
+                <p class="text-gray-600">Le délai varie selon la complexité du projet. En moyenne, un site web prend 4-8 semaines, une application mobile 8-12 semaines.</p>
+              </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="bg-white rounded-lg shadow-sm overflow-hidden border border-gray-100">
+              <button class="faq-toggle w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50">
+                <h3 class="text-lg font-semibold text-gray-900">Quels types de projets développez-vous ?</h3>
+                <svg class="w-5 h-5 text-gray-500 transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+              </button>
+              <div class="faq-content hidden px-6 py-4 bg-gray-50 border-t border-gray-100">
+                <p class="text-gray-600">Nous développons des sites web, des applications mobiles, des systèmes de gestion et des solutions sur mesure adaptées à vos besoins.</p>
+              </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="bg-white rounded-lg shadow-sm overflow-hidden border border-gray-100">
+              <button class="faq-toggle w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50">
+                <h3 class="text-lg font-semibold text-gray-900">Comment se déroule la collaboration ?</h3>
+                <svg class="w-5 h-5 text-gray-500 transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+              </button>
+              <div class="faq-content hidden px-6 py-4 bg-gray-50 border-t border-gray-100">
+                <p class="text-gray-600">Nous travaillons de manière agile avec des points réguliers. Vous suivez l'avancement en temps réel et pouvez ajuster le projet selon vos besoins.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Appointment Section -->
+    <section id="appointment" class="py-20 bg-white">
+      <div class="container mx-auto px-4">
+        <h2 class="text-4xl md:text-5xl font-bold text-center mb-12 text-gray-900">
+          Prendre Rendez-vous
+        </h2>
+        <div class="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+          <!-- Colonne de gauche : Présentation -->
+          <div class="space-y-8">
+            <div class="bg-gray-100 rounded-xl p-8 shadow-sm">
+              <h3 class="text-2xl font-semibold mb-4 text-gray-900">Découvrez si Fido+ est fait pour vous<br/><span class="text-primary">(on est sûr que oui !)</span></h3>
+              <p class="text-gray-900 text-lg mb-6">Planifiez une visite guidée de 15 minutes pour découvrir comment nous pouvons transformer votre vision en réalité numérique.</p>
+              <ul class="space-y-4">
+                <li class="flex items-start">
+                  <svg class="w-5 h-5 text-primary mt-1 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  <span class="text-gray-900">Présentation de notre approche unique</span>
+                </li>
+                <li class="flex items-start">
+                  <svg class="w-5 h-5 text-primary mt-1 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  <span class="text-gray-900">Démonstration de nos réalisations</span>
+                </li>
+                <li class="flex items-start">
+                  <svg class="w-5 h-5 text-primary mt-1 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  <span class="text-gray-900">Discussion sur vos objectifs</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Colonne de droite : Calendrier -->
+          <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+            <!-- Étape 1 : Calendrier -->
+            <div id="step1" class="p-8 border-b border-gray-100">
+              <h3 class="text-2xl font-semibold mb-6 text-gray-900">Sélectionnez une Date</h3>
+              <div class="calendar-container">
+                <div class="flex justify-between items-center mb-4">
+                  <button id="prevMonth" class="text-gray-900 hover:text-gray-600 transition-colors">
+                    <span class="sr-only">Mois précédent</span>
+                    &#x2190;
+                  </button>
+                  <h4 id="currentMonth" class="text-lg font-medium text-gray-900"></h4>
+                  <button id="nextMonth" class="text-gray-900 hover:text-gray-600 transition-colors">
+                    <span class="sr-only">Mois suivant</span>
+                    &#x2192;
+                  </button>
+                </div>
+                <div class="grid grid-cols-7 gap-1 text-center text-sm text-gray-400 mb-2">
+                  <div>Lun</div>
+                  <div>Mar</div>
+                  <div>Mer</div>
+                  <div>Jeu</div>
+                  <div>Ven</div>
+                  <div>Sam</div>
+                  <div>Dim</div>
+                </div>
+                <div id="calendarDays" class="grid grid-cols-7"></div>
+                <div id="timeSlots" class="mt-6 grid grid-cols-4 gap-2"></div>
+                <button id="nextStep" class="w-full bg-white text-black border-2 border-black hover:bg-gray-100 px-4 py-2 rounded-lg mt-6">Continuer</button>
+              </div>
+            </div>
+
+            <!-- Étape 2 : Formulaire -->
+            <div id="step2" class="p-8 border-b border-gray-100 hidden">
+              <div class="flex justify-between items-center mb-6">
+                <h3 class="text-2xl font-semibold text-gray-900">Vos Informations</h3>
+                <button id="backToCalendar" class="text-gray-900 hover:text-gray-600 transition-colors">Retour au calendrier</button>
+              </div>
+              <div class="selected-datetime mb-6 text-gray-900"></div>
+              <form id="appointmentForm" class="space-y-6">
+                <div class="grid grid-cols-2 gap-4">
+                  <div>
+                    <label for="firstName" class="block text-sm font-medium text-gray-900">Prénom</label>
+                    <input type="text" id="firstName" name="firstName" required class="mt-1 block w-full rounded-md bg-white border border-black text-gray-900 focus:border-2 focus:border-black focus:ring-0 focus:outline-none">
+                  </div>
+                  <div>
+                    <label for="lastName" class="block text-sm font-medium text-gray-900">Nom</label>
+                    <input type="text" id="lastName" name="lastName" required class="mt-1 block w-full rounded-md bg-white border border-black text-gray-900 focus:border-2 focus:border-black focus:ring-0 focus:outline-none">
+                  </div>
+                </div>
+                <div>
+                  <label for="email" class="block text-sm font-medium text-gray-900">Email</label>
+                  <input type="email" id="email" name="email" required class="mt-1 block w-full rounded-md bg-white border border-black text-gray-900 focus:border-2 focus:border-black focus:ring-0 focus:outline-none">
+                </div>
+                <div>
+                  <label for="phone" class="block text-sm font-medium text-gray-900">Téléphone</label>
+                  <input type="tel" id="phone" name="phone" required class="mt-1 block w-full rounded-md bg-white border border-black text-gray-900 focus:border-2 focus:border-black focus:ring-0 focus:outline-none">
+                </div>
+                <div>
+                  <label for="projectType" class="block text-sm font-medium text-gray-900">Type de Projet</label>
+                  <select id="projectType" name="projectType" required class="mt-1 block w-full rounded-md bg-white border-gray-300 text-gray-900 focus:border-primary focus:ring-primary">
+                    <option value="">Sélectionnez un type</option>
+                    <option value="website">Site Web</option>
+                    <option value="mobile">Application Mobile</option>
+                    <option value="desktop">Application Bureau</option>
+                    <option value="other">Autre</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="message" class="block text-sm font-medium text-gray-900">Message</label>
+                  <textarea id="message" name="message" rows="4" class="mt-1 block w-full rounded-md bg-white border border-black text-gray-900 focus:border-2 focus:border-black focus:ring-0 focus:outline-none"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-white text-black border-2 border-black hover:bg-gray-100 px-4 py-2 rounded-lg">Envoyer la demande</button>
+              </form>
+            </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+      <!-- Footer Section -->
+      <section class="py-4 bg-white relative z-50">
+        <div class="container mx-auto px-4">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Company Info -->
+            <div class="space-y-4">
+              <h3 class="text-xl font-bold">Fido Plus</h3>
+              <p class="text-gray-600">Solutions digitales innovantes pour votre entreprise</p>
+              <div class="flex space-x-4">
+                <a href="#" class="text-gray-600 hover:text-black transition-colors">
+                  <span class="sr-only">LinkedIn</span>
+                  <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                  </svg>
+                </a>
+                <a href="#" class="text-gray-600 hover:text-black transition-colors">
+                  <span class="sr-only">Instagram</span>
+                  <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <!-- Services -->
+            <div class="space-y-4">
+              <h3 class="text-lg font-semibold">Services</h3>
+              <ul class="space-y-2">
+                <li><a href="#" class="text-gray-600 hover:text-black transition-colors">Site Web</a></li>
+                <li><a href="#" class="text-gray-600 hover:text-black transition-colors">Application Mobile</a></li>
+                <li><a href="#" class="text-gray-600 hover:text-black transition-colors">Design Graphique</a></li>
+                <li><a href="#" class="text-gray-600 hover:text-black transition-colors">Marketing Digital</a></li>
+              </ul>
+            </div>
+
+            <!-- Contact -->
+            <div class="space-y-4">
+              <h3 class="text-lg font-semibold">Contact</h3>
+              <ul class="space-y-2">
+                <li class="text-gray-600">contact@fidoplus.com</li>
+                <li class="text-gray-600">+212 6XX-XXXXXX</li>
+                <li class="text-gray-600">Casablanca, Maroc</li>
+              </ul>
+            </div>
+
+            <!-- Newsletter -->
+            <div class="space-y-4">
+              <h3 class="text-lg font-semibold">Newsletter</h3>
+              <p class="text-gray-600">Restez informé de nos dernières actualités</p>
+              <form class="flex gap-2">
+                <input type="email" placeholder="Votre email" class="flex-1 px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:border-black">
+                <button type="submit" class="px-4 py-2 bg-black text-white rounded-lg hover:bg-gray-800 transition-colors">OK</button>
+              </form>
+            </div>
+          </div>
+
+          <!-- Copyright -->
+          <div class="mt-12 pt-8 border-t border-gray-200">
+            <p class="text-center text-gray-600">&copy; {new Date().getFullYear()} Fido Plus. Tous droits réservés.</p>
+          </div>
+        </div>
+      </footer>
+  </main>
+</Layout>
+
+    <script src="/src/scripts/appointment.js"></script>
+    <script src="/src/scripts/faq.js"></script>
+
+
+
+<style>
+.gradient-text {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary;
+}
+
+.btn-primary {
+  @apply inline-block px-8 py-3 bg-gradient-to-r from-primary to-secondary text-white font-semibold rounded-full hover:shadow-lg hover:scale-105 transition-all duration-300;
+}
+
+.btn-secondary {
+  @apply inline-block px-8 py-3 bg-white/10 text-white font-semibold rounded-full hover:bg-white/20 transition-all duration-300;
+}
+
+.btn-white {
+  @apply inline-block px-8 py-3 bg-white text-primary font-semibold rounded-full hover:shadow-lg hover:scale-105 transition-all duration-300;
+}
+
+.card {
+  @apply p-8 rounded-xl bg-white/5 hover:bg-white/10 transition-all duration-300;
+}
+
+.card-icon {
+  @apply w-16 h-16 flex items-center justify-center rounded-full bg-gradient-to-br from-primary to-secondary text-white mb-6;
+}
+
+.card-title {
+  @apply text-2xl font-bold mb-4;
+}
+
+.card-description {
+  @apply text-gray-300;
+}
+
+.section-title {
+  @apply text-4xl md:text-5xl font-bold;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+*:focus-visible {
+  outline: none !important;
+  box-shadow: 0 0 0 1px black;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-slide-up {
+  animation: slideUp 0.5s ease-out forwards;
+}
+
+.project-card {
+  @apply bg-transparent rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl hover:scale-105;
+  width: 320px;
+  height: 320px;
+  margin: 0 1rem;
+  padding: 0;
+}
+
+.project-card img {
+  @apply transition-transform duration-300;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.project-card:hover img {
+  transform: scale(1.05);
+}
+
+.projects-strip {
+  @apply flex;
+  animation: scroll 40s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-320px * 4 - 2rem * 4));
+  }
+}
+
+.projects-strip-container {
+  @apply overflow-hidden relative;
+  padding: 2rem 0;
+}
+
+.projects-strip-container::before,
+.projects-strip-container::after {
+  @apply absolute top-0 w-32 h-full z-10;
+  content: '';
+  background: linear-gradient(to right, rgba(249, 250, 251, 1), rgba(249, 250, 251, 0));
+}
+
+.projects-strip-container::after {
+  right: 0;
+  transform: rotateZ(180deg);
+}
+
+.projects-strip-container::before {
+  left: 0;
+}
+</style>

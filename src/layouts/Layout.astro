@@ -1,0 +1,50 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  lang?: string;
+}
+
+const { title, lang = 'fr' } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang={lang} class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Fido Plus - Solutions digitales sur mesure pour votre entreprise. Marketing digital, développement web et gestion de marque.">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body class="antialiased">
+    <slot />
+    <script src="https://unpkg.com/@splinetool/runtime@0.9.493/build/runtime.js"></script>
+  </body>
+</html>
+
+<style is:global>
+  :root {
+    --accent: 255, 51, 102;
+    --accent-light: 255, 102, 153;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+  }
+
+  .dir-rtl {
+    direction: rtl;
+  }
+</style>
