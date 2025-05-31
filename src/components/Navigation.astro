@@ -10,10 +10,9 @@ const isHome = currentPath === '/' || currentPath === '/fr' || currentPath === '
     </a>
 
     <div class="hidden md:flex items-center space-x-8 text-white">
-      <a href="/fr/#services" class="text-sm hover:text-primary transition-colors">Services</a>
-      <a href="/fr/#portfolio" class="text-sm hover:text-primary transition-colors">Portfolio</a>
-      <a href="/fr/#about" class="text-sm hover:text-primary transition-colors">À propos</a>
-      <a href="/fr/#contact" class="text-sm hover:text-primary transition-colors">Contact</a>
+      <a href="#services" class="text-sm hover:text-primary transition-colors">Services</a>
+      <a href="#appointment" class="text-sm hover:text-primary transition-colors">Rendez-vous</a>
+      <a href="#faq" class="text-sm hover:text-primary transition-colors">FAQ</a>
     </div>
 
     <div class="flex items-center space-x-4">
@@ -36,10 +35,9 @@ const isHome = currentPath === '/' || currentPath === '/fr' || currentPath === '
   <!-- Mobile Menu -->
   <div class="md:hidden hidden" id="mobile-menu">
     <div class="px-4 py-3 space-y-1 border-t bg-background">
-      <a href="/fr/#services" class="block py-2 text-sm hover:text-primary transition-colors">Services</a>
-      <a href="/fr/#portfolio" class="block py-2 text-sm hover:text-primary transition-colors">Portfolio</a>
-      <a href="/fr/#about" class="block py-2 text-sm hover:text-primary transition-colors">À propos</a>
-      <a href="/fr/#contact" class="block py-2 text-sm hover:text-primary transition-colors">Contact</a>
+      <a href="#services" class="block py-2 text-sm hover:text-primary transition-colors">Services</a>
+      <a href="#appointment" class="block py-2 text-sm hover:text-primary transition-colors">Rendez-vous</a>
+      <a href="#faq" class="block py-2 text-sm hover:text-primary transition-colors">FAQ</a>
       <div class="pt-2 mt-2 border-t flex items-center space-x-2">
         <a href="/fr" class={`text-sm ${currentPath.startsWith('/fr') ? 'text-primary' : 'hover:text-primary'} transition-colors`}>FR</a>
         <span class="text-muted-foreground">/</span>
