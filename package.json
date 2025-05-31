@@ -10,9 +10,7 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/netlify": "^2.5.2",
     "@astrojs/tailwind": "4.0.0",
-    "@netlify/functions": "^4.0.0",
     "@splinetool/runtime": "^0.9.493",
     "astro-i18next": "^1.0.0-beta.21",
     "gsap": "^3.12.2",
@@ -24,7 +22,6 @@
   },
   "devDependencies": {
     "@types/node-fetch": "^2.6.12",
-    "astro": "2.10.15",
-    "netlify-cli": "^21.5.0"
+    "astro": "2.10.15"
   }
 }
